@@ -1,0 +1,24 @@
+<div *ngFor="let itemWidget of widgets">
+    <div>{{itemWidget?.label}}</div>
+
+    <div class="form-row" 
+        *ngFor="let itemSchema of itemWidget.schema">
+
+        <div class="form-group">
+            <label class="control-label">
+                <span class="fieldcaption">
+                    {{itemSchema.label}}
+                </span>
+            </label>
+
+            <div class="">
+                <div class="form-control-static">
+                     {{getData(itemWidget, itemSchema.fieldname)}}
+                    <div class="validators">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
