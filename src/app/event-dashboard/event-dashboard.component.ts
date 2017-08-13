@@ -27,6 +27,6 @@ export class EventDashboardComponent {
     };
 
     ngOnInit() {
-       this.widgetsDataDashboard = this.widgetLoaderService.getWidgets(this.apiUrl);
+       this.widgetsDataDashboard = this.widgetLoaderService.getWidgets();
     }
 }
